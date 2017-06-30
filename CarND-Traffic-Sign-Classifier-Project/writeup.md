@@ -198,6 +198,8 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 2 of the 5 traffic signs, which gives an accuracy of 40%. The test cases were chosen specificly to trip the model and showcase how fragile the model could be in a real life scenario without having a certain certainty built in the model to express how confident the model is in its decision and whether it should be trusted or not. This uncertainty could be observed for the Slippery Road sign with a softmax of ~0.55 but it is still quite high in my opinion
 
+These results, when compared to the validation and test set, look really poor (40% accuracy vs ~90%). That bears the question on whether we "overfitted" because of our choice of dataset for training and testing which is not representative of the real world environemtn where signs seem to be way noisier in terms of shpae, visibility in poor conditions and other factors.
+
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 Answered in previous question and numbers reported in the picture
@@ -206,5 +208,4 @@ For the second image ...
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
 
